@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Códigos com JavaScript">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta htpp-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12 - Eleições</title>
+</head>
+
+<body>
+    <h1>Urna Eletronica</h1>
+    <p id="porcentagem1"></p>
+    <p id="porcentagem2"></p>
+    <p id="porcentagem3"></p>
+    <script>
+         /* Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos 
+        brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total 
+        de eleitores. */
+        var cidade= parseInt(prompt("Digite o nome da cidade: "));
+        var total= parseInt(prompt("Digite a quantidade total de eleitores no municipio: " ));
+        var branco= parseInt(prompt("Digite a quantidade de votos em brancos: "));
+        var nulos= parseInt(prompt("Digite a quantidade de votos nulos: "));
+        var valido= parseInt(prompt("Digite a quantidade de votos validos: "));
+        var porcbranco = branco/total*100; 
+        document.getElementById("porcentagem1").innerHTML = ("A porcentagem de votos brancos corresponde a: " +porcbranco );
+        var porcnulos = nulos/total*100;
+        document.getElementById("porcentagem2").innerHTML = ("A porcentagem de votos nulos corresponde a: " +porcnulos);
+        var porcvalidos = valido/total*100;
+        document.getElementById("porcentagem3").innerHTML = ("A porcentagem de votos validos corresponde a: " +porcvalidos);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Códigos com JavaScript">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta htpp-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15 - Comissão por Carro Vendido</title>
+</head>
+
+<body>
+    <script>
+         /*  Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, 
+        mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele 
+        efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas 
+        vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do 
+        vendedor.  */
+        var salariofixo = parseInt(prompt("Digite o seu salario fixo por mês: "));
+        var comissaofixo = parseInt(prompt("Digite a sua comissão fixa por carro vendido: "));
+        var vendamensal = parseInt(prompt("Digite o valor das suas vensas mensais: "));
+        var carrosvendidos = parseInt(prompt("Digite o número de carros vendidos por més: "));
+        var salariofinal = salariofixo+(carrosvendidos*comissaofixo)+(vendamensal*5/100); 
+        alert("O salario final corresponde a R$" +salariofinal);
+    </script>
+
+</body>
+
+</html>

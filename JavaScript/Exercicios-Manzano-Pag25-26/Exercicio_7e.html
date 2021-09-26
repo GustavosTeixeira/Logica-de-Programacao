@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Códigos com JavaScript">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta htpp-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7e - Pretação </title>
+</head>
+
+<body>
+    <h1>Prestação em Atraso</h1>
+    <p id="prestacao"></p>
+    <script>
+          /* Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula 
+        PRESTACAO ← VALOR + (VALOR * TAXA/100) * TEMPO).*/
+        var valor= parseFloat(prompt("Digite o valor do produto: "));
+        var taxa= parseFloat(prompt("Digite o valor da taxa: "));
+        var tempo= parseInt(prompt("Digite o tempo de atraso:  "));
+        var prestacao = (valor + (valor*(taxa/100)*tempo)).toFixed(2) ;
+        document.getElementById("prestacao").innerHTML = ("O valor da prestação em atraso corresponde a: " +prestacao);
+    </script>
+
+</body>
+
+</html>

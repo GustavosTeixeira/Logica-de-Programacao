@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Códigos com JavaScript">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta htpp-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7d - Combustivel gasto em uma viagem</title>
+</head>
+
+<body>
+    <h1>Combustivel gasto em uma viagem</h1>
+    <p id="tempo"></p>
+    <p id="velocidade"></p>
+    <p id="distancia"></p>
+    <p id="litros"></p>
+    <script>
+          /* Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um 
+            automóvel que faz 12 Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto 
+            (TEMPO) e a velocidade média (VELOCIDADE) durante a viagem. Desta forma, será possível obter a 
+            distância percorrida com a fórmula DISTANCIA ← TEMPO * VELOCIDADE. Possuindo o valor da 
+            distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula 
+            LITROS_USADOS ← DISTANCIA / 12. Ao final, o programa deve apresentar os valores da velocidade 
+            média (VELOCIDADE), tempo gasto na viagem (TEMPO), a distancia percorrida (DISTANCIA) e a 
+            quantidade de litros (LITROS_USADOS) utilizada na viagem. */
+        var tempo= parseInt(prompt("Digite o tempo gasto: "));
+        var velocidade= parseInt(prompt("Qual a média de velocidade ? "));
+        document.getElementById("tempo").innerHTML =("A viagem durou: "+tempo+"h");;
+        document.getElementById("velocidade").innerHTML =("A distancia percorrida é: " +velocidade+"Kms");
+        var distancia = tempo*velocidade ;
+        document.getElementById("distancia").innerHTML =("A distancia percorrida é: " +distancia+"Kms");
+        var litrosusados = distancia/12;
+        document.getElementById("litros").innerHTML = ("Quantidade de litros usados é: " +litrosusados+"L");
+    </script>
+
+</body>
+
+</html>

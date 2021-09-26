@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Códigos com JavaScript">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta htpp-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7k - Dolar para Real</title>
+</head>
+
+<body>
+    <script>
+          /*Elaborar um programa que efetue a apresentação do valor da conversão em dólar de um valor lido em 
+        real. O programa deve solicitar o valor da cotação do dólar e também a quantidade de reais disponível 
+        com o usuário, para que seja apresentado o valor em moeda americana.*/
+        var dolar= parseFloat(prompt("Digite quanto equivale 1 dolar em real atualmente: "));
+        var quant= parseFloat(prompt("Digite a quantidade a ser convertidas em real: "));
+        var conversao = quant/dolar 
+        alert("A quantidade em dolar convertida para reais é de: "+conversao.toFixed(2));
+    </script>
+
+</body>
+
+</html>

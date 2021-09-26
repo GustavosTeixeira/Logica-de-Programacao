@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Códigos com JavaScript">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta htpp-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3.10_1c - </title>
+</head>
+
+<body>
+    <script>
+          /*   Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a 
+            apuração dos votos foram computados votos nulos e votos em branco, além dos votos válidos para 
+            cada candidato. Deve ser criado um programa de computador que efetue a leitura da quantidade de 
+            votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e 
+            votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos 
+            válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de 
+            eleitores; o percentual correspondente de votos válidos do candidato A em relação à quantidade de 
+            eleitores; o percentual correspondente de votos válidos do candidato B em relação à quantidade de 
+            eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de 
+            eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último 
+            o percentual correspondente de votos em branco em relação à quantidade de eleitores
+        */
+        var cad1 = prompt("Nome do candidato 1: ");
+        var cad2 = prompt("Nome do candidato 2: ");
+        var cad3 = prompt("Nome do candidato 3: ");
+        var valido1 = parseInt(prompt("Digite a quantidade de votos VALIDOS para "+cad1+ ":"));
+        var valido2 = parseInt(prompt("Digite a quantidade de votos VALIDOS para "+cad2+ ":"));
+        var valido3 = parseInt(prompt("Digite a quantidade de votos VALIDOS para "+cad3+ ":"));
+        var nulo1 = parseInt(prompt("Digite a quantidade de votos NULOS para "+cad1+ ":"));
+        var nulo2 = parseInt(prompt("Digite a quantidade de votos NULOS para "+cad2+ ":"));
+        var nulo3 = parseInt(prompt("Digite a quantidade de votos NULOS para "+cad3+ ":"));
+        var branco1 = parseInt(prompt("Digite a quantidade de votos BRANCOS para "+cad3+ ":"));
+        var branco2 = parseInt(prompt("Digite a quantidade de votos BRANCOS para "+cad3+ ":"));
+        var branco3 = parseInt(prompt("Digite a quantidade de votos BRANCOS para "+cad3+ ":"));
+        var totaleleitores = valido1+valido2+valido3+nulo1+nulo2+nulo3+branco1+branco2+branco3
+        var totalvalidos = (valido1+valido2+valido3)/totaleleitores*100
+        var validocad1 =  (valido1)/totaleleitores*100
+        var validocad2 =  (valido2)/totaleleitores*100
+        var validocad3 =  (valido3)/totaleleitores*100
+        var votosnulosprc = (nulo1+nulo2+nulo3)/totaleleitores*100
+        var votosbrancosprc = (branco1+branco2+branco3)/totaleleitores*100
+        alert("O total de eleitores corresponde a: "+totaleleitores+
+        "\nO percentual de votos validos em relação ao número de eleitores é: " +totalvalidos.toFixed(2)+"%"+
+        "\nO percentual de votos validos de "+cad1+" em relação ao número de eleitores é: " +validocad1.toFixed(2)+"%"+
+        "\nO percentual de votos validos de "+cad2+" em relação ao número de eleitores é: " +validocad2.toFixed(2)+"%"+
+        "\nO percentual de votos validos de "+cad3+" em relação ao número de eleitores é: " +validocad3.toFixed(2)+"%"+
+        "\nO percentual de votos NULOS em relação ao número de eleitores é: " +votosnulosprc.toFixed(2)+"%"+
+        "\nO percentual de votos BRANCOS em relação ao número de eleitores é: " +votosbrancosprc.toFixed(2)+"%");
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Códigos com JavaScript">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta htpp-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Do While) Laços de Repetição em JavaScript</title>
+</head>
+
+<body>
+    <h2> Laços de Repetição em JavaScript</h2>
+    <h2 id="h2"></h2>
+    <p id="demo"></p>
+
+    <script>
+        var cont = 1;
+       var resultado = "";
+       var cont = 0;
+       var numero = parseInt(prompt("Digite um valor para saber sua tabuada: "))
+       do{
+        resultado += ("<br>"+numero+ " x "+cont+ " = " +(numero*cont)+"<br>");
+        cont++;
+       }while(cont<=10);
+       document.getElementById("h2").innerHTML = ("Tabuada do "+numero);
+       document.getElementById("demo").innerHTML = resultado;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 24">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 24</title>
+</head>
+
+<body>
+    
+    <script>
+        /* Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que 
+        ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que 
+        ultrapassar este valor, calcular e escrever o seu salário total. */
+        var salariofixo = prompt("Digite seu salario fixo: ");
+        var vendas = prompt("Digite o valor de vendas: ");
+        var comis5 = ((1500*3/100)+(+(vendas-1500)*5/100))
+        if (vendas <= 1500) {
+            alert("Voce obteve uma comissão de 3%, logo recebera: R$ "+(vendas)*3/100);
+            var salariototal = (salariofixo+(+(vendas*3)/100))
+            alert ("O seu salario total é de: R$ "+salariototal);
+        }else{
+            var salariototal = salariofixo + comis5
+            alert ("Você obteve uma comissão de 5%, logo recebera: R$ "+comis5);
+            alert("O seu salario total é de: R$ "+salariototal);
+        }
+    </script>
+</body>
+
+</html>

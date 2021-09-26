@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 30">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 30</title>
+</head>
+
+<body>
+    
+    <script>
+        /*   Ler 3 valores (considere que não serão informados valores iguais) e escrevê-los em ordem 
+        crescente. */
+        var n1 = parseInt(prompt("Informe o primeiro número: "));
+        var n2 = parseInt(prompt("Informe o segundo número: "));
+        var n3 = parseInt(prompt("Informe o terceiro número: "));
+        if (n3>n1 && n1>n2) {
+            alert(n2+ "," +n1+ "," +n3);
+
+        }else if (n2>n3 && n3>n1) {
+            alert(n1+ "," +n3+ "," +n2);
+
+        } else if (n1>n2 && n2>n3){
+            alert(n3+ "," +n2+ "," +n1);
+
+        }else if (n3<n1 && n1<n2){
+            alert(n3+ "," +n1+ "," +n2);
+        
+
+        }else if (n1<n2 && n1<n3){
+            alert(n1+ "," +n2+ "," +n3);
+        
+
+        }else if (n2<n1 && n2<n3){
+            alert(n2+ "," +n3+ "," +n1);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 21">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 21</title>
+</head>
+
+<body>
+    
+    <script>
+        /* Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os 
+        minutos) e calcule a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é 
+        de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte. */
+        var horainicio = parseInt(prompt("Hora de Inicio do Jogo: "));
+        var horafim = parseInt(prompt("Hora que o jogo acabou: "));
+        if (horafim < horainicio) {
+            var duracao = (24-horainicio)+horafim
+            alert("O jogo teve duração de "+duracao+ " horas");
+        } else if (horafim>horainicio){
+            var duracao = horafim-horainicio
+            alert("O jogo teve duração de "+duracao+ " horas");
+        }else if(horafim=horainicio){
+            var duracao = 24
+            alert("O jogo teve duração de "+duracao+ " horas");
+        }
+    </script>
+</body>
+
+</html>

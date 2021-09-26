@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 41">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 41</title>
+</head>
+
+<body>
+    
+    <script>
+        /*  Faça um algoritmo para ler as 3 notas obtidas por um aluno nas 3 verificações e a média dos 
+        exercícios que fazem parte da avaliação. Calcular a média de aproveitamento, usando a fórmula abaixo 
+        e escrever o conceito do aluno*/
+        var n1 = parseFloat(prompt("Digite nota 1: "));
+        var n2 = parseFloat(prompt("Digite nota 2:  "));
+        var n3 = parseFloat(prompt("Digite nota 3:  "));
+        var mediaex = (n1+n2+n3)/3
+        var mediaAp = (n1+n2*2+n3*3+mediaex)/7
+        if (mediaex>=9) {
+            alert("A média de aproveitamento do aluno foi de: "+mediaAp.toFixed(2)+" sendo, Conceito A");
+        }else if(mediaAp>=7.5 && mediaAp<9){
+            ("A média de aproveitamento do aluno foi de: "+mediaAp.toFixed(2)+" sendo, Conceito B");
+        }else if(mediaAp>=6 && mediaAp<7.5){
+            alert ("A média de aproveitamento do aluno foi de: "+mediaAp.toFixed(2)+" sendo, Conceito C");
+        }else{
+            alert ("A média de aproveitamento do aluno foi de: "+mediaAp.toFixed(2)+" sendo, Conceito D")
+        }
+    </script>
+</body>
+
+</html>

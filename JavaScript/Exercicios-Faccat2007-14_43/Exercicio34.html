@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 34">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 34</title>
+</head>
+
+<body>
+    
+    <script>
+        /*  início 
+        ler x 
+        ler y 
+        z  (x*y) + 5 
+        se z <= 0 então 
+        resposta  ‘A’ 
+        senão 
+        se z <= 100 então 
+        resposta  ‘B’ 
+        senão 
+        resposta  ‘C’ 
+        fim_se 
+        fim_se 
+        escrever z, resposta 
+        fim 
+        Faça um teste de mesa e complete o quadro a seguir para os seguintes valores:   */
+        var x = parseInt(prompt("Informe um valor para X "));
+        var y = parseInt(prompt("Informe um valor para Y "));
+        var z = (x*y)+5
+        if (z <= 0) {
+           alert(+z+" , A");
+        }else if (z <= 100){
+           alert(+z+" , B");
+        }else{
+           alert(+z+" , C");
+        }
+    </script>
+</body>
+
+</html>

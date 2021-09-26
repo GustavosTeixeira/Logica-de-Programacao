@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 36">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 36</title>
+</head>
+
+<body>
+    
+    <script>
+        /*   Escreva um algoritmo que leia as idades de 2 homens e de 2 mulheres (considere que as idades 
+        dos homens serão sempre diferentes entre si, bem como as das mulheres). Calcule e escreva a soma 
+        das idades do homem mais velho com a mulher mais nova, e o produto das idades do homem mais 
+        novo com a mulher mais velha. */
+        var h1 = parseInt(prompt("Informe a idade do primeiro homem: "));
+        var h2 = parseInt(prompt("Informe a idade do segundo homem: "));
+        var m1 = parseInt(prompt("Informe a idade da primeira mulher: "));
+        var m2 = parseInt(prompt("Informe a idade da segunda mulher: "));
+        if (h1 > h2 && m1<m2) {
+            var soma = h1 + m1
+            var produto = h2 * m2
+        }else{
+            var soma = h1 + m2
+            var produto = h2 * m1
+        }if (m1 < m2){
+            var soma = h2 + m1
+            var produto = h1 * m2
+        }else{
+            var soma = h2 + m2
+            var produto = h1 * m1
+        }
+        alert("A soma entre o homem mais velho e mulher mais nova é: "+soma+
+        "\nO produto entre o homem mais novo e mulher mais velha é: "+produto);
+    </script>
+</body>
+
+</html>

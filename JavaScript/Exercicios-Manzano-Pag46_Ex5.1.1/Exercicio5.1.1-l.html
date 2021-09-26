@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 5.1.1 - k">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 5.1.1 - k</title>
+</head>
+
+<body>
+    
+    <script>
+        /*Elaborar um programa que efetue a leitura de valores positivos inteiros até que um valor negativo 
+        seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo 
+        usuário. */
+        
+        var maior = 0
+        var menor = 0
+       var numero = 0
+        while (numero >= 0){
+            var numero = parseInt(prompt("Digite um número: "));
+            if( numero > maior){
+                maior = numero
+            }
+            if( numero < menor){
+                menor = numero
+            }
+       
+        }
+        alert("o maior valor é: "+maior+ "\ne o menor valor é: "+menor);
+    </script>
+</body>
+
+</html>

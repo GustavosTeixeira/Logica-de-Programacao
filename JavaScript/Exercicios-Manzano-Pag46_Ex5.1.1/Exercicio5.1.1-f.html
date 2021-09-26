@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 5.1.1 - f">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 5.1.1 - f</title>
+</head>
+
+<body>
+    
+    <script>
+        /* Elaborar um programa que apresente como resultado o valor de uma potência de uma base 
+            qualquer elevada a um expoente qualquer, ou seja, de BE, em que B é o valor da base e E o valor 
+            do expoente. Observe que neste exercício não pode ser utilizado o operador de exponenciação do 
+            portuguol (^). */
+        var cont = 1
+        var total = 1
+        var base = parseInt(prompt("Digite o valor da base: "));
+        var expoente = parseInt(prompt("Digite o valor do expoente: "));
+        while (cont <=expoente){
+            total = total*base
+            cont = cont + 1
+            alert (+base+ " ^ " +expoente+ " = " +total );
+        }
+        
+    </script>
+</body>
+
+</html>

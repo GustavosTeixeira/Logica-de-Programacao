@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 5.1.1 - g">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 5.1.1 - g</title>
+</head>
+
+<body>
+    
+    <script>
+        /* Escreva um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de 
+        Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta série se caracteriza 
+        pela soma de um termo atual com o seu anterior subseqüente, para que seja formado o próximo 
+        valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo 
+        é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc. */
+        var cont = 3
+        var atual = 1
+        var ant = 1
+        var base = alert("A série de Fibonacci até o décimo quinto termo é: ");
+        alert(ant);
+        alert(atual);
+        while (cont <= 15){
+            var prox = atual+ant
+            alert(prox)
+            cont = cont + 1
+            ant = atual
+            atual = prox
+        }
+        
+    </script>
+</body>
+
+</html>

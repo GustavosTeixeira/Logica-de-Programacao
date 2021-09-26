@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 5.2.1 - g">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 5.2.1 - g</title>
+</head>
+
+<body>
+    
+    <script>
+        /*  Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares 
+        situados na faixa numérica de 1 a 10.  */
+        var cont = 1;
+        var cont2;
+        var fat;
+        do{
+            var fat = 1;
+            if (cont % 2 != 0){
+                cont2 = cont
+                do{
+                fat = fat*cont2; 
+                cont2--;
+                }while(cont2>=1)
+                alert (fat);
+            }
+            cont++
+        }while(cont<=10)
+        
+        
+    </script>
+</body>
+
+</html>

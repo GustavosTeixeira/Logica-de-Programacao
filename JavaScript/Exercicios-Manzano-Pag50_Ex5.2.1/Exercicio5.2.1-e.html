@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 5.2.1 - e">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 5.2.1 - e</title>
+</head>
+
+<body>
+    
+    <script>
+        /*  Elaborar um programa que efetue a leitura de 15 valores numéricos inteiros e no final apresente o 
+        total do somatório da fatorial de cada valor lido. */
+        
+        var cont = 1;
+        var contador = 1;
+        var total = 0;
+        var valor;
+
+        do {
+            valor = 1;
+            cont = parseInt(prompt("Digite um valor"));
+
+            do {
+                valor = valor * cont;
+
+                cont--;
+            } while (cont >= 1)
+
+            total += valor;
+
+            contador++;
+        } while (contador <= 15)
+
+        alert (total)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 5.2.1 - f">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício 5.2.1 - f</title>
+</head>
+
+<body>
+    
+    <script>
+        /* Elaborar um programa que efetue a leitura sucessiva de valores numéricos e apresente no final o 
+        total do somatório, a média aritmética e o total de valores lidos. O programa deve fazer as leituras 
+        dos valores enquanto o usuário estiver fornecendo valores positivos. Ou seja, o programa deve 
+        parar quando o usuário fornecer um valor negativo. Não se esqueça que o usuário pode entrar 
+        como primeiro número um número negativo, portanto, cuidado com a divisão por zero no cálculo da 
+        média.*/
+        var total = 0 
+        var soma = 0
+        do{
+            var N = parseFloat(prompt("Digite um valor: "));
+            if(N>0){
+                soma = soma + N
+                total++
+            }
+        }while(N>0)
+        if (total > 0){
+            var media = soma / total
+        }
+    
+        alert("Soma: "+soma+ "\nTotal de valores digitados: " +total+ "\nMédia: "+media.toFixed(2));
+    </script>
+</body>
+
+</html>

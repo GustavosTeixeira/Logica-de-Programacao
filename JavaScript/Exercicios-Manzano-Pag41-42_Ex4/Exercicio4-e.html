@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício da apostila num: 4 - e">
+    <meta name="author" content="Gustavo Silva Teixeira">
+    <meta name="keywords" content="Exercicio, apostila, JavaScript">
+    <title>Exercício  4 - e </title>
+</head>
+
+<body>
+    <script>
+        /*Efetuar a leitura de três valores (variáveis A, B e C) e efetuar o cálculo da equação completa de 
+        segundo grau, apresentando as duas raízes, se para os valores informados for possível efetuar o 
+        referido cálculo. Lembre-se de que a variável A deve ser diferente de zero. */
+        var delta = 0
+        var RaizNeg = 0
+        var RaizPos = 0
+        var a = parseInt(prompt("Digite valor a:"));
+        var b = parseInt(prompt("Digite valor b:"));
+        var c = parseInt(prompt("Digite valor c:"));
+
+        delta = ((b^2)-(4*a*c))
+        if(delta>=0 && a!=0){
+            RaizPos = (b + Math.sqrt(delta))/2*a
+            RaizNeg = (b - Math.sqrt(delta))/2*a
+            alert("As raízes são:\nx1 = " +RaizPos.toFixed(2)+ "\nx2 = " +RaizNeg.toFixed(2));
+        }else{
+            alert("A divisão por 0 é indeterminada");
+        }
+    </script>
+</body>
+
+</html>

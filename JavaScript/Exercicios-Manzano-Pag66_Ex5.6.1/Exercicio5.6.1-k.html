@@ -16,12 +16,11 @@
        /*   Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares 
         situados na faixa numérica de 1 a 10.   */
         var cont = 1
-        var n = 1
         var fat = 0
        for (var cont=1;cont<10;cont++){
            if (cont % 2 != 0){
             fat = cont 
-            for (cont2=cont-1; cont2>1; cont2--){
+            for (var cont2=cont-1; cont2>1; cont2--){
                 fat = fat * cont2;
             }
            alert ("o fatorial de "+cont+ " é " +fat);
